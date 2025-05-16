@@ -24,7 +24,7 @@ The answer is nuanced and documented in Microsoft's mail protection stack.
 
 According to the diagram, **custom transport rules** and **TABL** both sit under the "Content Filtering" layer. However, their behavior in practice differs.
 
-![Filtering Stack Diagram](./media/TABL-vs-TransportRules/FilteringStack-Diagram.png)
+![Filtering Stack Diagram](./ExchangeOnlineProtection/media/TABL-vs-TransportRules/FilteringStack-Diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ TABL is not just another filter — it **overrides Defender for Office 365 and E
 `[Your image here]`
 
 Multiple test emails were sent:  
-![Message Trace](./media/TABL-vs-TransportRules/MessageTrace_TestEmails.png)
+![Message Trace](./ExchangeOnlineProtection/media/TABL-vs-TransportRules/MessageTrace_TestEmails.png)
 
 1. TABL block only.  
 2. TABL block + Transport rule that sets SCL to -1.  
@@ -66,10 +66,10 @@ Multiple test emails were sent:
 
 In cases 1 and 2:  
 The messages never reached the inbox — they were **quarantined**.  
-![Quarantine Test Emails](./media/TABL-vs-TransportRules/Quarantine-TestsEmails.png)
+![Quarantine Test Emails](./ExchangeOnlineProtection/media/TABL-vs-TransportRules/Quarantine-TestsEmails.png)
 
 📌 Quarantine details (screenshot placeholder)  
-![Quarantine Details](./media/TABL-vs-TransportRules/Quarantine-DetailedInformation.png)
+![Quarantine Details](./ExchangeOnlineProtection/media/TABL-vs-TransportRules/Quarantine-DetailedInformation.png)Update
 
 ---
 
