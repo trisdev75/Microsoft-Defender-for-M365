@@ -68,8 +68,8 @@ In cases 1 and 2:
 The messages never reached the inbox — they were **quarantined**.  
 ![Quarantine Test Emails](./media/TABL-vs-TransportRules/Quarantine-TestsEmails.png)
 
-📌 Quarantine details (screenshot placeholder)  
-![Quarantine Details](./media/TABL-vs-TransportRules/Quarantine-DetailedInformation.png)Update
+📌 Quarantine details 
+![Quarantine Details](./media/TABL-vs-TransportRules/Quarantine-DetailedInformation.png)
 
 ---
 
