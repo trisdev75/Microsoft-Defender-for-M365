@@ -4,9 +4,9 @@
 
 - [📘 Context](#-context)
 - [❓What is TABL actually doing?](#what-is-tabl-actually-doing)
-- [🧪 Real-world test: TABL vs Transport Rule](#real-world-test-tabl-vs-transport-rule)
-- [🔍 Observation in Message Trace and Quarantine](#observation-in-message-trace-and-quarantine)
-- [📨 Message Header summary](#message-header-summary)
+- [🧪 Real-world test: TABL vs Transport Rule](#-real-world-test-tabl-vs-transport-rule)
+- [🔍 Observation in Message Trace and Quarantine](#-observation-in-message-trace-and-quarantine)
+- [📨 Message Header summary](#-message-header-summary)
 - [✅ Conclusion](#-conclusion)
 - [📝 Notes](#-notes)
 
@@ -92,7 +92,7 @@ The messages never reached the inbox — they were **quarantined**.
 
 ## ✅ Conclusion
 
-Despite the transport rule that should have overridden the verdict (SCL -1), **TABL wins**:
+Despite the transport rule that should have overridden the verdict (SCL -1), **TABL wins** 💪:
 
 - TABL **overrides** both EOP and Defender policies.
 - TABL verdicts apply **before** transport rules in practice, even if visually represented at the same layer.
