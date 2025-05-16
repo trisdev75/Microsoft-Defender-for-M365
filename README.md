@@ -7,8 +7,6 @@ This repository will centralize articles and real-world examples related to Micr
 Microsoft Defender for Office 365 offers multiple layers of protection to detect, investigate, and respond to threats targeting Exchange Online.  
 This repository aims to share use cases, hunting queries, investigation scenarios, and technical notes based on real-life experience in production environments.
 
----
-
 ## 🚧 Topics to be covered (articles coming soon)
 
 - 🎯 Targeted attack protection (phishing, spoofing, malware)
