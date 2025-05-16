@@ -51,7 +51,7 @@ TABL is not just another filter — it **overrides Defender for Office 365 and E
 - A **transport rule** was created to **whitelist** the same sender — expected behavior: set **SCL -1**.
 
 📌 Transport rule configuration (screenshot placeholder)  
-`[Your image here]`
+![Transport Rule](./media/TABL-vs-TransportRules/TransportRule_Config.png)
 
 Multiple test emails were sent:  
 ![Message Trace](./media/TABL-vs-TransportRules/MessageTrace_TestEmails.png)
