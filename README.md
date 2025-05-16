@@ -17,14 +17,10 @@ This repository aims to share use cases, hunting queries, investigation scenario
 - 🔁 Auto-remediation and manual response workflows
 - 🛠️ PowerShell scripts for reporting or investigation
 
----
-
 ## 📌 Notes
 
 All content in this repository is shared for educational purposes and based on hands-on experience.  
 Articles will be added progressively as they are written and validated.
-
----
 
 ## 📄 License
 
