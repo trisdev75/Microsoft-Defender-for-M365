@@ -24,7 +24,7 @@ The answer is nuanced and documented in Microsoft's mail protection stack.
 
 According to the diagram, **custom transport rules** and **TABL** both sit under the "Content Filtering" layer. However, their behavior in practice differs.
 
-![Filtering Stack Diagram](./ExchangeOnlineProtection/media/TABL-vs-TransportRules/FilteringStack-Diagram.png)
+![Filtering Stack Diagram](./media/TABL-vs-TransportRules/FilteringStack-Diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ TABL is not just another filter — it **overrides Defender for Office 365 and E
 `[Your image here]`
 
 Multiple test emails were sent:  
-![Message Trace](./ExchangeOnlineProtection/media/TABL-vs-TransportRules/MessageTrace_TestEmails.png)
+![Message Trace](./media/TABL-vs-TransportRules/MessageTrace_TestEmails.png)
 
 1. TABL block only.  
 2. TABL block + Transport rule that sets SCL to -1.  
@@ -66,10 +66,10 @@ Multiple test emails were sent:
 
 In cases 1 and 2:  
 The messages never reached the inbox — they were **quarantined**.  
-![Quarantine Test Emails](./ExchangeOnlineProtection/media/TABL-vs-TransportRules/Quarantine-TestsEmails.png)
+![Quarantine Test Emails](./media/TABL-vs-TransportRules/Quarantine-TestsEmails.png)
 
 📌 Quarantine details (screenshot placeholder)  
-![Quarantine Details](./ExchangeOnlineProtection/media/TABL-vs-TransportRules/Quarantine-DetailedInformation.png)Update
+![Quarantine Details](./media/TABL-vs-TransportRules/Quarantine-DetailedInformation.png)Update
 
 ---
 
@@ -77,16 +77,16 @@ The messages never reached the inbox — they were **quarantined**.
 
 **Subject**: Test 5 white list  
 **Sender**: *******@yahoo.fr  
-**Recipient**: *********@*********.com  
+**Recipient**: *****@domain.com  
 
-| Date (UTC+01:00)     | Event           | Detail                                                                 |
-|----------------------|------------------|------------------------------------------------------------------------|
-| 5/16/2025, 3:43 PM   | Receive          | Message received by: ************.eurprd**.prod.outlook.com            |
-| 5/16/2025, 3:43 PM   | Spam             | Spam confidence level: 9                                              |
-| 5/16/2025, 3:43 PM   | Transport rule   | Transport rule: 'Accepted External Email Address Whitelist', ID: (...)|
-| 5/16/2025, 3:43 PM   | Receive          | Message received via TLS1.2 with AES256                                |
-| 5/16/2025, 3:43 PM   | Send             | Message transferred.                                                   |
-| 5/16/2025, 3:44 PM   | Deliver          | Message quarantined in: DefaultFolderType:QuarantinedEmailSecured      |
+| Date (UTC+01:00)     | Event           | Detail                                                                                                                                                      |
+|----------------------|------------------|------------------------------------------------------------------------                                                                                    |
+| 5/16/2025, 3:43 PM   | Receive          | Message received by: xxxxxxxx.eurprdXX.prod.outlook.com                                                                                                    |
+| 5/16/2025, 3:43 PM   | Spam             | Spam confidence level: 9                                                                                                                                   |
+| 5/16/2025, 3:43 PM   | Transport rule   | Transport rule: 'Accepted External Email Adress WhiteList', ID: ('XXXX-XXXX-XXXX-XXXX-XXXXX'), DLP policy: '', ID: (00000000-0000-0000-0000-000000000000). |
+| 5/16/2025, 3:43 PM   | Receive          | Message received via TLS1.2 with AES256                                                                                                                    |
+| 5/16/2025, 3:43 PM   | Send             | Message transferred.                                                                                                                                       |
+| 5/16/2025, 3:44 PM   | Deliver          | Message quarantined in: DefaultFolderType:QuarantinedEmailSecured                                                                                          |
 
 ---
 
